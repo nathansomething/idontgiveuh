@@ -5,4 +5,5 @@ public @Data class YesNoDecision {
 
 	private String question;
 	private Boolean answer;
+	private Boolean sure;
 }

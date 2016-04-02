@@ -28,8 +28,8 @@
         <p>Life is full of important decisions. Let us make them for you!</p>
     </div>
     <div class="container">
-       <a href="decide/yesno"><button type="button" class="btn">A Yes or No Thing</button></a>
-       <a href="decide/acomplicatedthing"><button type="button" class="btn">A Complicated Thing</button></a>
+       <a href="/${code}/decide/yesno"><button type="button" class="btn">A Yes or No Thing</button></a>
+       <a href="/${code}/decide/acomplicatedthing"><button type="button" class="btn">A Complicated Thing</button></a>
     </div>
 </body>
 </html>

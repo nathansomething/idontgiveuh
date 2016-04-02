@@ -38,6 +38,15 @@ button.btn.idontgiveuh {
     margin-top: 100px;
 }
 
+.container.answer {
+    font-size: 30px;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(125,125,125,0.5);
+    background-color: rgba(0,0,0,0.5);
+}
+
 input.form-control, textarea.form-control {
     background-color: #000000;
     color: #EEEEEE;
@@ -45,4 +54,8 @@ input.form-control, textarea.form-control {
     font-size: 16px;
     font-weight: bold;
     font-family: 'Lato', serif;
+}
+
+input.form-control:focus, textarea.form-control:focus {
+    border-color: #AB3C3C;
 }

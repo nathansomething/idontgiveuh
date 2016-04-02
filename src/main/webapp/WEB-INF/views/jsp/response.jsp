@@ -28,9 +28,17 @@
         <h1>I Don't Give Uh ${code}</h1>
         <p>Life is full of important decisions. Let us make them for you!</p>
     </div>
+    <div class="container answer">
+        <p>Your Question: ${decision.question}?</p>
+        <p>Answer: ${decision.answer ? "YES" : "NO"}</p>
+    </div>
     <div class="container">
-        <p>Your Question: ${decision.question}</p>
-        <p>Answer: ${decision.answer}</p>
+       <a href="/${code}/decide/yesno"><button type="button" class="btn">Ask Another Yes/No Question</button></a>
+       <a href="/${code}/"><button type="button" class="btn">Go Back to Home</button></a>
+       <a href="/${code}/decide/yesno/resp"><button type="button" class="btn" onclick="<%session.setAttribute("decision.sure","true");%>">Are You Sure?</button>
+       <c:if test="${decision.sure}">
+            <p>Yes</p>
+       </c:if>
     </div>
 </body>
 </html>

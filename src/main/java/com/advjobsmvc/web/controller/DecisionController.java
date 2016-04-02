@@ -35,10 +35,20 @@ public class DecisionController {
 	
 	@RequestMapping(value = "//{code:.+}/decide/yesno/resp", method = RequestMethod.POST)
 	public ModelAndView decide_yesno_resp(@PathVariable("code") String code, YesNoDecision decision) {
-
-		System.out.println("The following text was entered: " + decision.getQuestion());
-		
 		decision.setAnswer(new Random().nextBoolean());
+		decision.setSure(false);
+		ModelAndView model = new ModelAndView();
+		model.setViewName("response");
+		model.addObject("code", code);
+		model.addObject("decision", decision);
+
+		return model;
+	}
+	
+	@RequestMapping(value = "//{code:.+}/decide/yesno/resp", method = RequestMethod.GET)
+	public ModelAndView decide_yesno_resp_get(@PathVariable("code") String code, YesNoDecision decision) {
+		decision.setAnswer(new Random().nextBoolean());
+		decision.setSure(false);
 		ModelAndView model = new ModelAndView();
 		model.setViewName("response");
 		model.addObject("code", code);
