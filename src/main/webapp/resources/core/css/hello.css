@@ -1,0 +1,48 @@
+
+body {
+    background-image: url('/resources/core/img/background.png');
+    background-repeat: repeat;
+}
+
+.header {
+    color: #FFFFFF;
+}
+
+.header h1 {
+    font-size: 100px;
+}
+
+.header p {
+    font-size: 30px;
+}
+
+button.btn {
+    height: 100px;
+    width: 300px;
+    margin: 20px;
+    color: #FFFFFF;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+button.btn.idontgiveuh {
+    height: 300px;
+    width: 80%;
+    text-align: center;
+    marign: 0 auto;
+    border: 1px solid rgba(125,125,125,0.5);
+    background-color: rgba(200,0,0,0.5);
+}
+
+.container {
+    margin-top: 100px;
+}
+
+input.form-control, textarea.form-control {
+    background-color: #000000;
+    color: #EEEEEE;
+    border: 1px solid #555555;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Lato', serif;
+}
