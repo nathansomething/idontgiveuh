@@ -1,7 +1,7 @@
 FoodAPIData.class
 com/advjobsmvc/web/controller/DecisionController.class
-com/advjobsmvc/config/SpringWebConfig.class
 pojo/ComplicatedDecision.class
-com/advjobsmvc/servlet/MyWebInitializer.class
+com/advjobsmvc/config/SpringWebConfig.class
 pojo/YesNoDecision.class
+com/advjobsmvc/servlet/MyWebInitializer.class
 com/advjobsmvc/web/controller/MainController.class

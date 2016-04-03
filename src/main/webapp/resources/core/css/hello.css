@@ -56,6 +56,15 @@ button.btn.idontgiveuh:hover {
     background-color: rgba(0,0,0,0.5);
 }
 
+button.comp-btn, .iga-btn {
+    font-size: 20px;
+    height: 100px;
+    width: auto;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.5);
+}
+
 .container.choices p {
     color: #FFFFFF;
     display: inline block;
