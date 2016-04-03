@@ -34,16 +34,21 @@
     <div class="container"><h2><!-- CHOICE TITLE --></h2></div>
     <div class="container choices">
         <div class="row">
-            <div class="col-md-4">
-		        <input id="newItem" type="text" placeholder="New Item">
-		        <button id="addItem">Add Item</button>
+        <div class="col-md-12">
+              <input id="title" class="form-control" type="text" placeholder="Title">
+              <button id="addTitle" class="btn">Set Title</button>
+            </div>
+            <div class="col-md-12">
+                <div class="input-group">
+                    <input id="newItem" class="form-control" type="text" placeholder="New Item">
+                    <div class="input-group-addon iga-btn"><button id="addItem" class="comp-btn">Add Item</button></div>
+                </div>
 		        <div id="items"></div>
             </div>
-            <div class="col-md-4">
-	          <input id="title" type="text" placeholder="Title">
-	          <button id="addTitle">Add Item</button>
-            </div>
         </div>
+        <div class="text-center">
+              <button class="btn idontgiveuh" type="submit">I Don't Give a ${code}</button>
+         </div>
     </div>
 </body>
 </html>
