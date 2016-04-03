@@ -28,12 +28,16 @@
         <p>Life is full of important decisions. Let us make them for you!</p>
     </div>
 	<div class="container">
-	   <a href="buy"><button type="button" class="btn">I Want to Buy a Thing</button></a>
-	   <a href="cook"><button type="button" class="btn">I Want to Cook a Thing</button></a>
-	   <a href="eat"><button type="button" class="btn">I Want to Eat a Thing</button></a>
-	   <a href="do"><button type="button" class="btn">I Want to Do a Thing</button></a>
-	   <a href="decide"><button type="button" class="btn">I Want to Decide on a Thing</button></a>
-	   <a href="go"><button type="button" class="btn">I Want to Go a Place</button></a>
+	   <div class="row">
+            <a href="buy"><button type="button" class="btn">I Want to Buy a Thing</button></a>
+            <a href="cook"><button type="button" class="btn">I Want to Cook a Thing</button></a>
+            <a href="eat"><button type="button" class="btn">I Want to Eat a Thing</button></a>
+	   </div>
+	   <div class="row">
+	       <a href="do"><button type="button" class="btn">I Want to Do a Thing</button></a>
+	       <a href="decide"><button type="button" class="btn">I Want to Decide on a Thing</button></a>
+	       <a href="go"><button type="button" class="btn">I Want to Go a Place</button></a>
+        </div>
 	</div>
 </body>
 </html>

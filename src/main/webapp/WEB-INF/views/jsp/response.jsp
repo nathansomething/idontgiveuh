@@ -32,13 +32,20 @@
         <p>Your Question: ${decision.question}?</p>
         <p>Answer: ${decision.answer ? "YES" : "NO"}</p>
     </div>
+    <c:if test="${decision.sure}">
+    <div class="container answer">
+        <p>Yes you dipshit. I'm always right!</p>
+    </div>
+    </c:if>
     <div class="container">
-       <a href="/${code}/decide/yesno"><button type="button" class="btn">Ask Another Yes/No Question</button></a>
-       <a href="/${code}/"><button type="button" class="btn">Go Back to Home</button></a>
-       <a href="/${code}/decide/yesno/resp"><button type="button" class="btn" onclick="<%session.setAttribute("decision.sure","true");%>">Are You Sure?</button>
-       <c:if test="${decision.sure}">
-            <p>Yes</p>
-       </c:if>
+       <form:form class="form" method="post" action="/${code}/decide/yesno/resp" modelAttribute="decision">
+          <a href="/${code}/decide/yesno"><button type="button" class="btn">Ask Another Yes/No Question</button></a>
+          <a href="/${code}/"><button type="button" class="btn">Go Back to Home</button></a>
+          <form:input type="hidden" path="question" value="${decision.question}"/>
+          <form:input type="hidden" path="answer" value="${decision.answer}"/>
+          <form:input type="hidden" path="sure" value="true"/>
+          <button class="btn" type="submit">Are You Sure?</button>
+        </form:form>
     </div>
 </body>
 </html>
