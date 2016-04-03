@@ -28,8 +28,7 @@
         <p>Life is full of important decisions. Let us make them for you!</p>
     </div>
     <div class="container">
-       <a href="/${code}/go/close"><button type="button" class="btn">Go Somewhere Close</button></a>
-       <a href="/${code}/go/far"><button type="button" class="btn">Go Somewhere Far</button></a>
+       <p>I wanna buy a thing</p>
     </div>
 </body>
 </html>
