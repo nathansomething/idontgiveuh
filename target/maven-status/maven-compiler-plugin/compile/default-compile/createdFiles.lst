@@ -1,5 +1,5 @@
 com/advjobsmvc/web/controller/MainController.class
 com/advjobsmvc/web/controller/DecisionController.class
 com/advjobsmvc/config/SpringWebConfig.class
-com/advjobsmvc/servlet/MyWebInitializer.class
 pojo/YesNoDecision.class
+com/advjobsmvc/servlet/MyWebInitializer.class

@@ -56,6 +56,16 @@ button.btn.idontgiveuh:hover {
     background-color: rgba(0,0,0,0.5);
 }
 
+.container.choices p {
+    color: #FFFFFF;
+    display: inline block;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    border: 1px solid rgba(125,125,125,0.5);
+    background-color: rgba(0,0,0,0.5);
+}
+
 input.form-control, textarea.form-control {
     background-color: #000000;
     color: #EEEEEE;
