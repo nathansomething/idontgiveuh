@@ -34,7 +34,7 @@
     </div>
     <c:if test="${decision.sure}">
     <div class="container answer">
-        <p>Yes you dipshit. I'm always right!</p>
+        <p>${comment}</p>
     </div>
     </c:if>
     <div class="container">
