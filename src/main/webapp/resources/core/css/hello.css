@@ -20,18 +20,27 @@ button.btn {
     height: 100px;
     width: 300px;
     margin: 20px;
-    color: #FFFFFF;
+    color: #B59E9F;
     font-size: 20px;
     background-color: rgba(0,0,0,0.5);
+}
+
+button.btn:hover {
+    color: #FFFFFF;
 }
 
 button.btn.idontgiveuh {
     height: 300px;
     width: 80%;
-    text-align: center;
-    marign: 0 auto;
+    font-size: 50px;
+    color: #B59E9F;
     border: 1px solid rgba(125,125,125,0.5);
     background-color: rgba(200,0,0,0.5);
+}
+
+button.btn.idontgiveuh:hover {
+    color: #FFFFFF;
+    background-color: rgba(200,0,0,0.7);
 }
 
 .container {

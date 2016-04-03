@@ -31,10 +31,10 @@
     <div class="container">
 		<form:form class="form" method="post" action="/${code}/decide/yesno/resp" modelAttribute="decision">
 		  <form:input class="form-control" path="question" placeholder="Enter Your Yes/No Question"/>
-		  <button class="btn idontgiveuh" type="submit">I Don't Give a ${code}</button>
-		  <!-- <input type="submit" value="Submit"/>
-			<!-- <p>Question: <input type="text" th:field="*{choice}" /> ?</p>
-			<p><input type="submit" value="Submit" /> <input type="reset" value="Reset"/></p> -->
+		  <form:input type="hidden" path="sure" value="false"/>
+		  <div class="text-center">
+		      <button class="btn idontgiveuh" type="submit">I Don't Give a ${code}</button>
+		  </div>
 		</form:form>
     </div>
 </body>
