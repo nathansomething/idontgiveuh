@@ -47,6 +47,16 @@ button.btn.idontgiveuh:hover {
     margin-top: 100px;
 }
 
+.container h2 {
+    font-size: 150px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(125,125,125,0.5);
+    background-color: rgba(0,0,0,0.5);
+}
+
 .container.answer {
     font-size: 30px;
     color: #FFFFFF;
@@ -56,13 +66,19 @@ button.btn.idontgiveuh:hover {
     background-color: rgba(0,0,0,0.5);
 }
 
-button.comp-btn, .iga-btn {
+.comp-btn {
     font-size: 20px;
-    height: 100px;
     width: auto;
     margin: 0;
-    padding: 10px;
-    background-color: rgba(0,0,0,0.5);
+    padding: 0;
+    border: 0;
+    background-color: #D4BCBE;
+}
+
+.input-group-addon {
+    background-color: #D4BCBE;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .container.choices p {
@@ -70,7 +86,7 @@ button.comp-btn, .iga-btn {
     display: inline block;
     padding: 10px;
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 50px;
     border: 1px solid rgba(125,125,125,0.5);
     background-color: rgba(0,0,0,0.5);
 }
@@ -79,8 +95,9 @@ input.form-control, textarea.form-control {
     background-color: #000000;
     color: #EEEEEE;
     border: 1px solid #555555;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
+    height: 50px;
     font-family: 'Lato', serif;
 }
 

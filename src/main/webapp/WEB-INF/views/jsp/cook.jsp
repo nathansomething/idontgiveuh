@@ -1,4 +1,5 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +29,13 @@
         <p>Life is full of important decisions. Let us make them for you!</p>
     </div>
     <div class="container">
-       <p>I wanna cook a thing</p>
+        <form:form class="form" method="post" action="/${code}/cook/resp" modelAttribute="recipeData">
+          <form:input class="form-control" path="searchRequest" placeholder="Enter a Food"/>
+          <form:input type="hidden" path="sure" value="false"/>
+          <div class="text-center">
+              <button class="btn idontgiveuh" type="submit">I Don't Give a ${code}</button>
+          </div>
+        </form:form>
     </div>
 </body>
 </html>

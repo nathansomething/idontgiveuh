@@ -49,16 +49,6 @@ public class MainController {
 		return model;
 	}
 	
-	@RequestMapping(value = "//{code:.+}/cook", method = RequestMethod.GET)
-	public ModelAndView cook(@PathVariable("code") String code) {
-
-		ModelAndView model = new ModelAndView();
-		model.setViewName("cook");
-		model.addObject("code", code);
-
-		return model;
-	}
-	
 	@RequestMapping(value = "//{code:.+}/eat", method = RequestMethod.GET)
 	public ModelAndView eat(@PathVariable("code") String code) {
 

@@ -33,9 +33,9 @@
         <p>Answer: ${decision.answer ? "YES" : "NO"}</p>
     </div>
     <c:if test="${decision.sure}">
-    <div class="container answer">
-        <p>${comment}</p>
-    </div>
+	    <div class="container answer">
+	        <p>${comment}</p>
+	    </div>
     </c:if>
     <div class="container">
        <form:form class="form" method="post" action="/${code}/decide/yesno/resp" modelAttribute="decision">

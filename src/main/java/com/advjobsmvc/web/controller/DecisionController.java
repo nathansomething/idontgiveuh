@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import pojo.ComplicatedDecision;
@@ -44,7 +45,6 @@ public class DecisionController {
 		model.setViewName("response");
 		model.addObject("code", code);
 		model.addObject("decision", decision);
-		
 
 		return model;
 	}
@@ -58,16 +58,16 @@ public class DecisionController {
 		return model;
 	}
 	
-	@RequestMapping(value = "//{code:.+}/decide/acomplicatedthing", method = RequestMethod.POST)
-	public ModelAndView decide_acomplicatedthing_resp(@PathVariable("code") String code, ComplicatedDecision decision) {
-		decision.setAnswer(
-				decision.getChoices().get(
-						new Random().nextInt(decision.getChoices().size() - 1)));
-		decision.setSure(false);
+	@RequestMapping(value = "//{code:.+}/decide/acomplicatedthing/resp", method = RequestMethod.POST)
+	public ModelAndView decide_acomplicatedthing_resp(@PathVariable("code") String code, @RequestParam(value="choices") String[] choices) {
+//		decision.setAnswer(
+//				decision.getChoices().get(
+//						new Random().nextInt(decision.getChoices().size() - 1)));
+//		decision.setSure(false);
 		ModelAndView model = new ModelAndView();
-		model.setViewName("acomplicatedthing");
+		model.setViewName("acomplicatedresponse");
 		model.addObject("code", code);
-		model.addObject("decision", decision);
+		model.addObject("decision", choices[0]);
 
 		return model;
 	}
